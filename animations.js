@@ -21,9 +21,9 @@ function introAnimation() {
   const myName = document.querySelector(".main_info-title");
   const myImage = document.querySelector(".main_info-image");
   const myTitle = document.querySelector(".main_info-subtitle");
-  myName.classList.add("show");
-  myImage.classList.add("show");
-  myTitle.classList.add("show2");
+  myName.classList.add("nameShow");
+  myImage.classList.add("nameShow");
+  myTitle.classList.add("titleShow");
 }
 
 introAnimation();
