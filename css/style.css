@@ -26,8 +26,8 @@ a {
 }
 
 img {
-	max-width: 255px;
-	margin-top: 10px;
+  max-width: 255px;
+  margin-top: 10px;
 }
 .main_info-image,
 .who_i_am-img {
@@ -131,6 +131,7 @@ span {
 }
 .main_info-subtitle {
   padding: 8px;
+  height: 65px;
 }
 
 /*WHAT I DO*/
@@ -250,6 +251,10 @@ span {
     margin-top: 50px;
   }
 
+  .main_info-subtitle {
+    height: 45px;
+  }
+
   .what_i_do {
     display: grid;
     grid-template-areas:
@@ -310,6 +315,7 @@ span {
     position: absolute;
     left: -20px;
     width: 100%;
+    height: 45px;
     text-align: right;
   }
   .main_info-img {
@@ -354,6 +360,35 @@ span {
 }
 
 /* ANIMATIONS */
+
+.main_info-title {
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transform: translateX(-100px);
+}
+.main_info-image {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+  transform: translateY(20px);
+}
+.main_info-subtitle {
+  opacity: 0;
+  width: 0%;
+  transition: 1s ease-in-out;
+  transition-delay: 0.7s;
+  transform: translateX(700px);
+  overflow: hidden;
+}
+.show2 {
+  opacity: 1;
+  width: 100%;
+  transform: translateX(0px);
+}
+.show {
+  opacity: 1;
+  transform: translateX(0px);
+}
 
 .what_i_do-items {
   opacity: 0;

@@ -4,13 +4,6 @@ function showAnimation() {
   const itemsPosition = item.getBoundingClientRect().top;
   const screenPosition = window.innerHeight / 1.3;
 
-  const itemTitle = document.querySelector(".what_i_do-title");
-  const itemTitlePosition = itemTitle.getBoundingClientRect().top;
-
-  if (itemTitlePosition < screenPosition) {
-    itemTitle.classList.add("anim");
-  }
-
   if (itemsPosition < screenPosition) {
     items.forEach(function (item) {
       item.classList.add("animation-appear");
@@ -23,3 +16,14 @@ function showAnimation() {
 }
 
 window.addEventListener("scroll", showAnimation);
+
+function introAnimation() {
+  const myName = document.querySelector(".main_info-title");
+  const myImage = document.querySelector(".main_info-image");
+  const myTitle = document.querySelector(".main_info-subtitle");
+  myName.classList.add("show");
+  myImage.classList.add("show");
+  myTitle.classList.add("show2");
+}
+
+introAnimation();
