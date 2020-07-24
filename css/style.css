@@ -152,6 +152,10 @@ span {
   text-align: center;
   word-spacing: 3px;
 }
+.who_i_am-sub {
+  width: 100%;
+  height: 88px;
+}
 
 /*MY WORKS*/
 
@@ -290,6 +294,9 @@ span {
   .who_i_am-info p {
     grid-area: p;
   }
+  .who_i_am-sub {
+    height: 45px;
+  }
   .works img {
     max-width: 400px;
   }
@@ -380,23 +387,55 @@ span {
   transform: translateX(700px);
   overflow: hidden;
 }
-.titleShow {
-  opacity: 1;
-  width: 100%;
-  transform: translateX(0px);
+.section-title {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: 0.7s ease-in-out;
 }
-.nameShow {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-.what_i_do-items {
+.what_i_do-title,
+.what_i_do-subtitle,
+.my_works-subtitle,
+.works {
   opacity: 0;
   transform: translateY(20px);
   transition: 0.5s all ease-in-out;
+}
+.who_i_am-title,
+.who_i_am-subtitle {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 0.7s all ease-in-out;
+}
+.who_i_am-sub {
+  opacity: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.who_i_am-img {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 0.5s ease-in-out;
 }
 
 .animation-appear {
   opacity: 1;
   transform: translateY(0px);
+}
+.section-title_show {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.titleShow {
+  opacity: 1;
+  width: 100%;
+  transform: translateX(0px);
+}
+.myInfoSub {
+  opacity: 1;
+  width: 150%;
+}
+.myInfoSubSmall {
+  opacity: 1;
+  width: 100%;
 }
